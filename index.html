@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <select id="modeSelect">
+        <option value="pvp">Player vs Player</option>
+        <option value="ai">Player vs AI</option>
+      </select>
     <div id="gameContainer">
         <h1>Tic Tac Toe</h1>
         <div id="cellContainer">
@@ -21,8 +25,9 @@
             <div class="cell" cellIndex="8"></div>
         </div> 
         <h2 id="statusText"></h2>
-        <button id="restartBtn">Restart</button>
+        <button id="restartBtn" onclick="restartGame()">Restart</button>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
